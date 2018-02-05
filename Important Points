@@ -1,0 +1,25 @@
+# EffectiveJava
+1.Static Factory Methods instead of COnstructors : 
+
+a) They have names
+b) check on duplicate object creation (instance-controlled) 
+c)A third advantage of static factory methods is that, unlike constructors, they can return an object of any subtype of their return type 
+d) A fourth advantage of static factory methods is that they reduce the verbosity
+of creating parameterized type instances.
+
+Static factory methods disadvantages:
+When providing only static factory methods, classes without public or protected constructors cannot be subclassed.
+They are not readily distinguishable from other static methods
+
+2. Minimize mutability - five points to remember
+Don’t provide any methods that modify the object’s state (known as mutators).
+Ensure that the class can’t be extended
+Make all fields final
+Make all fields private
+Ensure exclusive access to any mutable components
+
+3.  Prefer interfaces to abstract classes
+Existing classes can be easily retrofitted to implement a new interface
+Interfaces are ideal for defining mixins
+Interfaces allow the construction of nonhierarchical type frameworks
+Interfaces enable safe, powerful functionality enhancements
